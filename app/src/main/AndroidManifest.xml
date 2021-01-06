@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GeoQuiz">
-
+        <activity android:name=".CheatActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
-            <!--The previous line that set the device orientation to portrait mode
-            is just to avoid the bug mentioned in MainActivity.kt near line 55.-->
+
+            <!--
+            The previous line that set the device orientation to portrait mode
+            is just to avoid the bug mentioned in MainActivity.kt near line 55.
+            -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
